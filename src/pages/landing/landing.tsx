@@ -8,22 +8,10 @@ import Header from "@/components/landing/header";
 const Landing = () => {
   const [loaded, setLoaded] = useState(true);
 
-  const handleLoadFalse = () => {
-    setLoaded(false);
-  };
-
   useEffect(() => {
-    // setTimeout(() => {
-    //   setLoaded(true);
-    // }, 1500);
-
-    // Listen for load event
-    window.addEventListener("load", handleLoadFalse);
-
-    // Cleanup function to remove event listeners
-    return () => {
-      window.removeEventListener("load", handleLoadFalse);
-    };
+    setTimeout(() => {
+      setLoaded(false);
+    }, 3000);
   }, []);
 
   return (
