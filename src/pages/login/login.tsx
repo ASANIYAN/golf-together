@@ -37,19 +37,16 @@ const Login = () => {
         <section className="mt-4 flex flex-col gap-4 w-full max-w-[400px]">
           <CustomInput name="fullName" defaultType="text" label="Full name" />
           <CustomInput name="email" defaultType="text" label="Email address" />
-          <CustomInput name="password" defaultType="text" label="Password" />
+          <CustomInput
+            name="password"
+            defaultType="password"
+            label="Password"
+          />
 
           <Button className="w-full bg-[#468B64] mt-8 py-4 px-6 flex items-center justify-center rounded-lg text-base font-semibold text-white text-center hover:bg-[#468B64] hover:scale-[0.95] transition duration-300">
             {" "}
             Register now{" "}
           </Button>
-          {/* <section className="flex-col gap-4">
-            <label htmlFor="" className="text-[#101928] font-medium text-sm ">trans
-              {" "}
-              Full Name{" "}
-            </label>
-            <Input className="border border-[#D0D5DD] bg-white w-full text-sm text-black placeholder:text-[#98A2B3] focus-visible:ring-transparent h-[42px]" />
-          </section> */}
         </section>
       </section>
     </section>

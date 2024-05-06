@@ -1,6 +1,6 @@
 import golf_video from "@/assets/golf_video.mp4";
 import gif_fallback from "@/assets/gif_fallback_golf_img.png";
-import { Button } from "../ui/button";
+import { Link } from "react-router-dom";
 
 type HeroProps = {
   loaded: boolean;
@@ -13,7 +13,7 @@ const Hero: React.FC<HeroProps> = ({ loaded }) => {
       <section className="h-full flex-col items-center justify-center">
         <section
           className={`text-white font-semibold text-5xl sm:text-6xl lg:text-7xl xl:text-7xl text-center h-full flex flex-col justify-center items-center w-full mx-auto max-w-[600px] opacity-0 scale-[0.8] ${
-            loaded && "fadeIn"
+            !loaded && "fadeIn"
           }`}
         >
           {" "}
@@ -23,10 +23,13 @@ const Hero: React.FC<HeroProps> = ({ loaded }) => {
             A competition where passionate golfers around the world meet,
             connect and compete in an annual inter-state golf tournament.{" "}
           </span>
-          <Button className="bg-[#477C15] border-[1.5px] border-[#477C15] hover:border-[#5d8e30] hover:bg-[#5d8e30] rounded-full flex justify-center items-center text-center font-semibold text-lg text-white w-full max-w-[238px] h-[48px] mt-5 hover:scale-[0.95] transition duration-300">
+          <Link
+            to={"/login"}
+            className="bg-[#477C15] border-[1.5px] border-[#477C15] hover:border-[#5d8e30] hover:bg-[#5d8e30] rounded-full flex justify-center items-center text-center font-semibold text-lg text-white w-full max-w-[238px] h-[48px] mt-5 hover:scale-[0.95] transition duration-300"
+          >
             {" "}
             Apply to Join{" "}
-          </Button>
+          </Link>
         </section>
       </section>
       <video

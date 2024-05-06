@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import golf_together_logo from "@/assets/golf_together_logo.svg";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -27,10 +28,13 @@ const Header = () => {
             {" "}
             Sign in
           </Button>
-          <Button className="w-[91px] h-[32px] font-medium flex justify-center items-center border rounded-full bg-[#477C15] border-[#477C15] text-white hover:bg-white hover:text-[#477C15] text-sm leading-[22px]">
+          <Link
+            to={"/login"}
+            className="w-[91px] h-[32px] font-medium flex justify-center items-center border rounded-full bg-[#477C15] border-[#477C15] text-white hover:bg-white hover:text-[#477C15] text-sm leading-[22px]"
+          >
             {" "}
             Join now
-          </Button>
+          </Link>
         </section>
       </section>
     </section>
