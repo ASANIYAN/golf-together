@@ -25,7 +25,7 @@ const Hero: React.FC<HeroProps> = ({ loaded }) => {
           </span>
           <Link
             to={"/login"}
-            className="bg-[#477C15] border-[1.5px] border-[#477C15] hover:border-[#5d8e30] hover:bg-[#5d8e30] rounded-full flex justify-center items-center text-center font-semibold text-lg text-white w-full max-w-[238px] h-[48px] mt-5 hover:scale-[0.95] transition duration-300"
+            className="bg-[#477C15] border-[1.5px] border-[#477C15] hover:border-[#5d8e30] hover:bg-[#5d8e30] rounded-full flex justify-center items-center text-center font-semibold text-lg text-white w-full max-w-[238px] h-[48px] mt-5 hover:scale-[0.95] transition duration-[2000ms] animate-bounce"
           >
             {" "}
             Apply to Join{" "}
