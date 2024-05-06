@@ -11,7 +11,7 @@ const Landing = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoaded(false);
-    }, 3000);
+    }, 2500);
   }, []);
 
   return (
